@@ -1,0 +1,418 @@
+body{
+    background-image: url("imagenes/bolitas.jpg");
+    color: wheat;
+    font-family: 'Ultra', serif;
+    font-size: 24px;
+}
+h2{
+    color: rgb(5, 170, 5);
+    text-decoration:underline;    
+}
+p{
+    font-size: 24px;
+    padding: 0 200px 0 0;
+}
+h4{
+    font-size: 24px;
+}
+h3{
+    margin: 0 100px 0 0;
+}
+label{
+    font-size: 24px;
+}
+.div{
+    margin: 10px 300px;
+    text-align: center;
+    font-size: 25px;   
+}
+
+#pag1{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+#pag1:active{
+    color: green;
+}
+#pag1:hover{
+    font-size: 40px;
+    display: inline;
+    text-decoration: none;
+}
+#pag1:visited{
+    color: rgb(10, 190, 235);
+    font-size: 20px;
+}
+#espacio{
+    width: 100%;
+    height: 50px;
+}
+
+/*Diseño de Tabla*/
+
+#barra{
+    background-image: url("imagenes/fondo\ final.jpg");
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 25px 0 200px 0;
+    box-shadow: 6px 8px 5px rgba(140, 0, 255, 0.356);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div ul li{
+    padding: 0 75px;
+}
+div ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    width: 90%;
+}
+div ul li a:hover{
+    background-color: rgb(115, 184, 5);
+}
+li{
+    float: left;
+    margin: 0px 10px;
+}
+ul{
+    display: inline-block;
+}
+#logo{
+    justify-content: space-evenly;
+}
+#logoIndex{
+    width: 40px;
+}
+
+/*Registro*/
+.contenedor{
+    width: 100%;
+}
+#referencias{
+    width: 80%;
+    text-align: center;
+}
+#tabla{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    float: left;
+    margin: 10px 50px 10px 150px;
+    border-color: blueviolet;
+    border-collapse: collapse;
+    background-color: beige;
+    color: black;
+}
+th, td{
+    border: 5px solid;
+    border-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+
+caption{
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.localizacion iframe {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    width: 300px;
+    height: 300px;
+    border: none;
+}
+#ingreso1{
+    width: 350px;
+    background-color: rgba(139, 92, 22, 0.3);
+}
+#correo{
+    font-size: 25px;
+}
+#pedido{
+    font-size: 20px;
+}
+#tipo{
+    margin: 0 0 0 20px;
+}
+#consulta1{
+    width: 1050px;
+    background-color: rgba(139, 92, 22, 0.3);
+}
+textarea{
+    width: 1000px;
+    height: auto;
+}
+/*Piso*/
+#divpiso{
+    background-color: rgba(20, 214, 46, 0.219);
+    margin: auto;
+    padding: 10px 30px;
+}
+#divpiso img{
+    height: 200px;
+    width: 270px;
+}
+.pisos{
+    padding: 0 20px;
+}
+/*Lampara*/
+pre{
+    margin: 0 150px 0 0;
+}
+.imgL{
+    width: 500px;
+}
+#videoL{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 300px;
+    height: 300px;
+    border: none;
+}
+/*Mesa*/
+#bodyM{
+    background: none;
+    background: linear-gradient(to right, rgb(31, 44, 34), rgb(33, 59, 33), rgb(18, 59, 18),rgb(1, 56, 1))
+}
+.CabeceraM{
+    text-align: center;
+    margin: 0 30%;
+}
+/*carrusel*/
+.carrusel{
+    text-align: center;
+}
+.headerM, .mainM, .footerM{
+    width: 1024px;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width: 50%;
+    position: absolute;
+    top: 150px;
+}
+#titulo{
+    margin-left: 200px;
+    margin-right: auto;
+}
+.imgCarrusel{
+    width: 300px;
+    height: 250px;
+}
+#baseM{
+    position: relative;
+    left: 10px;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+    body{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+        padding: 0 200px 0 0;
+    }
+    label{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .div{
+        margin: 10px 100px;
+        text-align: center;
+        font-size: 20px;   
+    }
+    /*responsive de barra index*/
+    div ul li{
+        padding: 0 25px;
+    }
+    div ul li a{
+        font-size: 25px;
+    }
+    #logoIndex{
+        width: 30px;
+    }
+
+    /*responsive registro*/
+    .contacto{
+        font-size: 20px;
+    }
+    #ingreso1{
+        width: 350px;
+        background-color: rgba(139, 92, 22, 0.3);
+    }
+    #consulta1{
+        width: 599px;
+    }
+    .localizacion iframe {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+    }
+    #pedido{
+        font-size: 20px;
+    }
+    #tipo{
+        margin: 0 0 0 15px;
+    }
+    .materiales{
+        position: absolute;
+        left: 26%;
+    }
+    .cantidades{
+        position: absolute;
+        left: 19.5%;
+    }
+    #tabla{
+        font-size: 20px;
+        margin: 10px 30px 10px 100px;
+    }
+    th, td{
+        border: 5px solid;
+        border-color: blueviolet;
+        margin: 10px;
+        padding: 10px;
+    }
+    #correo{
+        font-size: 20px;
+    }
+    textarea{
+        width: 580px;
+        height: auto;
+    }
+    /*responsive de mesa*/
+.headerM, .mainM, .footerM{
+    width: 590px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    top: 300px;
+}
+.imgCarrusel{
+    width: 275px;
+    height: 220px;
+}
+
+/*pisos*/
+#divpiso img{
+    height: 170px;
+    width: 170px;
+}
+/*lampara*/
+.imgL{
+    width: 400px;
+}
+}
+
+        /*pantalla chica*/
+@media all and (max-width: 599px){
+
+    body{
+        font-size: 18px;
+    }
+    p{
+        font-size: 18px;
+        padding: 0 200px 0 0;
+    }
+    h4{
+        font-size: 18px;
+    }
+    label{
+        font-size: 18px;
+    }
+    .div{
+        margin: 5px 10px;
+        text-align: center;
+        font-size: 18px;   
+    }
+    /*pantalla chica barra index*/
+div ul li{
+    padding: 0 5px;
+}
+div ul li a{
+    font-size: 18px;
+}
+#logoIndex{
+    width: 25px;
+}
+
+/*registro chico*/
+.contacto{
+    font-size: 18px;
+}
+#ingreso1{
+    width: 355px;
+}
+#consulta1{
+    width: 360px;
+}
+.localizacion iframe {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+#pedido{
+    font-size: 18px;
+}
+#tabla{
+    font-size: 18px;
+    margin: 10px;
+}
+#tipo{
+    margin: 0 0 0 20px;
+}
+#newtext{
+    position: relative;
+    width: 10%;
+}
+.materiales{
+    position: absolute;
+    left: 150px;
+}
+.cantidades{
+    position: absolute;
+    left: 60px;
+}
+#tabla{
+    margin: 5%;
+}
+
+#correo{
+    font-size: 20px;
+}
+textarea{
+    width: 340px;
+    height: auto;
+}
+    /*pantalla chica mesa*/
+    .headerM, .mainM, .footerM{
+        width: 350px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next{
+        top: 500px;
+    }
+    #titulo{
+        margin-left: 170px;        
+    }
+    .imgCarrusel{
+        width: 200px;
+        height: 150px;
+    }
+    /*lampara chica*/
+    .imgL{
+        width: 300px;
+    }
+}

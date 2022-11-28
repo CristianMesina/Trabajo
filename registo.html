@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Resina Epoxica </title>
+    <link rel="stylesheet" href="diseño.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            background: none;
+            background: linear-gradient(to bottom right, rgb(31, 44, 34), rgb(33, 59, 33), rgb(18, 59, 18),rgb(1, 56, 1));
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2><a href="registo.html" id="logo">
+            <img src="imagenes/logo.png" alt="Logo" width="20">
+          </a> Registrate</h2>
+    </header>
+    <main>
+        <form method="post" autocomplete="off" id="ingreso1">
+            <fieldset>
+                <legend>Formulario de Ingreso</legend>
+                <label for="nombreF">Nombre y Apellido</label>
+                <input type="text" id="nombreF" placeholder="EJ: juan garcia">
+                <br>
+                <br>
+                <label for="correoF">Correo</label>
+                <input type="email" id="correoF" placeholder="ejemplo@gmail.com">
+                <br>
+                <br>
+                <label for="edadF">Edad</label>
+                <input type="number" id="edadF">
+                <br>
+                <br>
+                <label for="nivel">Nivel</label>
+                <select name="nivel" id="nivel">
+                    <option value="elige">Basico</option>
+                    <option value="elige">Avanzado</option>
+                    <option value="elige">Experto</option>
+                </select>
+                <br>
+                <br> 
+                <input type="submit">
+            </fieldset>
+        </form>
+        <hr>
+    <section class="referencias">
+        <h2 style="text-align: center">Ubicación y horario</h2>
+        <div>
+            <div id="tabla">
+            <table style= border:1px>
+                <caption>Horarios de Atención</caption>
+                <tr>
+                    <th>Lunes, Martes y Jueves</th>
+                    <td>9 a 18 hs</td>
+                </tr>
+                <tr>
+                    <th>Miercoles y Viernes</th>
+                    <td>11 a 20 hs</td>
+                </tr>
+                <tr>
+                    <th>Sábados</th>
+                    <td>9 a 14 hs</td>
+                </tr>
+            </table>
+            </div> 
+            <div class="localizacion">
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.442182131555!2d-68.84264868510851!3d-32.93933317884742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bc3f523959b%3A0xd43b82733f323684!2sCervantes%201180%2C%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1661910970324!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación"></iframe>
+            </div>
+        </div>
+    </section>
+    <br><br>    
+        <hr>
+    <section class="registro3">
+        <h4 style="color: wheat;">Para compras de materiales solicita lista de precio al 
+             <a style="color: rgb(0, 195, 255);" href="mailto: mesina_02@hotmail.com?subject=Gracias por contactarnos">
+                correo<span class="material-symbols-outlined">
+            live_help
+            </span></a>
+        e indicanos que tipo de trabajo realizaras y te bridaremos una guia</h4>  
+<!--Selector de consulta-->
+<div id="pedido">
+    <label for="tipo">Seleccione el tipo de Trabajo: </label> <br>
+    <select id="tipo"> <!--genera una casilla de seleccion junto con el label-->
+        <option value="">--Haga una elección--</option>
+        <option value="piso">Pisos</option> <!--con value le asigno un valor a la opcion con el cual podemos trabajar en js-->
+        <option value="mesa">Mesas</option>
+        <option value="lampara">Lamparas</option>
+    </select>
+        <p>Seleccione antes de continuar</p> <!-- es un parrafo vacio porque es donde se escribira segun se eliga en select, en vez de p podemos usar un label y -->
+        <label id="material" >Superficie</label> <br><!--se deja vacio o se puede colocar algo a reemplazar para escribir lo conseguido en js-->
+        <input type="text" for="material" placeholder="madera, ceramica"> <br> <br>
+        <label id="cantidad" >Cantidad</label> <br>
+        <input type="number" for="cantidad" placeholder="0">
+    <SCript src="main.js"></SCript>
+    <br>
+    <br>
+        <form method="get" id="consulta1">
+            <label>Detalle materiales de compra</label>
+            <br>
+            <textarea cols="100" rows="10"></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</section>      
+        <br>
+        <hr>
+
+    </main>
+    <footer>
+        <a class="contacto" href="index.html">
+            <span class="material-symbols-outlined">
+                home
+                </span>Inicio</a>
+    </footer>
+
+</body>
+</html>
